@@ -25,6 +25,6 @@ resource "docker_container" "dckr-portainer" {
   	container_path 		  = var.container_path
   }
   networks_advanced {
-    name		= "frontend-network"
+    name		= "frontend-net"
   }
 }
