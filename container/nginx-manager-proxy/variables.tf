@@ -22,7 +22,7 @@ variable "deploy_environment" {
 variable "nginx_db_default_mountpoint" {
   type         = string
   description  = ""
-  default      = "<absolute path>/nginx-nmp/data"
+  default      = "<absolute path>/nmp-db/data"
 }
 
 variable "db_mysql_user" {
