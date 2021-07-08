@@ -5,7 +5,7 @@ variable "container_hostname" {
 
 variable "container_domainname" {
    description		= "Domain name of the container.."
-   default 		   = "cedeno.me"
+   default 		   = ""
 }
 
 variable "TIME_ZONE" {
@@ -22,7 +22,7 @@ variable "deploy_environment" {
 variable "nginx_db_default_mountpoint" {
   type         = string
   description  = ""
-  default      = "/home/<user>/Documents/terraform-docker-foundation/containers/nginx-nmp/data"
+  default      = "<absolute path>/nginx-nmp/data"
 }
 
 variable "db_mysql_user" {
