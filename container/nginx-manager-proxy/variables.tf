@@ -25,21 +25,15 @@ variable "nginx_db_default_mountpoint" {
   default      = "<absolute path>/nmp-db/data"
 }
 
-variables "db_mysql" {
-  type = list(objects({
-    db_name = string
-    db_host = string
-    db_port = number
-    db_user = string
-    db_pass = string
-  }))
-  default = [
-    {
-      db_name = "nmp-db"
-      db_host = "nmp-db"
-      db_port = 3306
-      db_user = ""
-      db_pass = ""
-    }
-  ]
+variable "db_mysql" {
+  type    = list(string)
+  default = ["nmp-db","3306","nmp_database"]
 }
+
+variable "db_user" {
+  type = string
+}
+variable "db_pass" {
+  type = string
+}
+
