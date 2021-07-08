@@ -1,9 +1,9 @@
 provider "docker" {
 }
 
-resource "docker_container" "dckr-nginx-db" {
-  name                  = "dckr-nginx-db"
-  image                 = docker_image.nginx-db-img.name
+resource "docker_container" "dckr-nmp-db" {
+  name                  = "dckr-nmp-db"
+  image                 = docker_image.nmp-db-img.name
   restart               = "always"
   domainname            = var.container_domainname
   hostname              = var.container_hostname
@@ -17,7 +17,7 @@ resource "docker_container" "dckr-nginx-db" {
     ]
 
   volumes {
-  	volume_name    		  = "${docker_volume.nginx-db-vol.name}"
+  	volume_name    		  = "${docker_volume.nmp-db-vol.name}"
   	container_path 		        = "/var/lib/mysql"
   }
   
