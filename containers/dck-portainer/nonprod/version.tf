@@ -1,5 +1,5 @@
 provider "docker" {
-
+  host = "ssh://ajcborges@192.168.1.121:22"
 }
 
 terraform {

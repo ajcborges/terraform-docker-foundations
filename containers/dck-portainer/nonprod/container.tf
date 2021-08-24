@@ -1,6 +1,3 @@
-provider "docker" {
-}
-
 resource "docker_container" "dck-portainer" {
   name                  = "dck-portainer"
   image                 = docker_image.portainer-img.name
