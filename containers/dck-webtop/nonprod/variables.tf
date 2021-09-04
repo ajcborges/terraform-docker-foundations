@@ -29,7 +29,7 @@ variable "container_hostname" {
 
 variable "container_domainname" {
   description = "Domain name of the container.."
-  default     = "cedeno.me"
+  default     = "cedeno.local"
 }
 
 variable "container_port" {
@@ -44,7 +44,7 @@ variable "network_alias" {
 
 variable "traefik_dns_label" {
   description = "label for traefik."
-  default     = "webtop.cedeno.me"
+  default     = "webtop.cedeno.local"
 }
 
 
