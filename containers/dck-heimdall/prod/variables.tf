@@ -1,6 +1,6 @@
 variable "container_port" {
   description = "Port for the Application"
-  default     = "8080"
+  default     = "80"
 }
 
 variable "container_hostname" {
@@ -37,5 +37,5 @@ variable "TIME_ZONE" {
 variable "heimdall_cfg_default_mountpoint" {
   type        = string
   description = "here"
-  default     = "/media/docker/containers/dck-heimdall/config"
+  default     = "/media/docker/containers/heimdall/config"
 }
