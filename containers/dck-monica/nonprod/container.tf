@@ -12,7 +12,7 @@ resource "docker_container" "dck-monicaapp" {
 
   env = [
     "TZ=${var.TIME_ZONE}",
-    "DB_HOST=monicadb",
+    "DB_HOST=dck-monicadb",
     "PUID=${var.container_puid}",
     "PGUID=${var.container_pgid}",
     "APP_KEY=MiHe3JFtqFwnFaLC2X8tUzXsk56ExAKD"
