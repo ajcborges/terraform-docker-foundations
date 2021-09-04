@@ -2,6 +2,6 @@
 #
 # Docker Image for Deployment
 resource "docker_image" "dupeguru-img" {
-   name                         = "jlesage/dupeguru"
-   keep_locally                 = true
+  name         = "jlesage/dupeguru"
+  keep_locally = true
 }
