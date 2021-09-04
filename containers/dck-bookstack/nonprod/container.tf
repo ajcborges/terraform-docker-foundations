@@ -18,7 +18,7 @@ resource "docker_container" "dck-bookstackapp" {
     "DB_DATABASE=bookstackapp",
     "PUID=${var.container_puid}",
     "PGUID=${var.container_pgid}",
-    "APP_URL=https://wiki.cedeno.me"
+    "APP_URL=https://wiki.cedeno.local"
   ]
 
   networks_advanced {
