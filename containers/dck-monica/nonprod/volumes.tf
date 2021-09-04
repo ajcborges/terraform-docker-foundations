@@ -1,7 +1,7 @@
 # Docker Volumes
 #
 # Docker Volume for  Container
-resource "docker_volume" "monica-cfg-vol" {
+resource "docker_volume" "monicaapp-cfg-vol" {
   name   = "vol-monicaapp-cfg"
   driver = "local-persist"
   driver_opts = {
