@@ -35,5 +35,5 @@ terraform.rc
 
 # Ignore terraform plans
 *.tfplan
-containers/dck-dupeguru/nonprod/terraform.tfstate
-containers/dck-dupeguru/nonprod/terraform.tfstate
+terraform.tfstate
+
