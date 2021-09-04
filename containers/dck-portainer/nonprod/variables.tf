@@ -10,7 +10,7 @@ variable "container_path" {
 
 variable "container_hostname" {
   description = "Hostname of the container."
-  default     = "dck-portainer"
+  default     = "portainer"
 }
 
 variable "container_domainname" {
