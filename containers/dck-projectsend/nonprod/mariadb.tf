@@ -1,7 +1,7 @@
 # Referred to https://github.com/linuxserver/docker-mariadb
 # for config.
-resource "docker_container" "dck-nextclouddb" {
-  name                  = "dck-nextclouddb"
+resource "docker_container" "dck-projectsenddb" {
+  name                  = "dck-projectsenddb"
   image                 = docker_image.mariadb-img.latest
   restart               = "unless-stopped"
   domainname            = var.container_domainname
