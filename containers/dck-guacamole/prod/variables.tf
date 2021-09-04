@@ -37,5 +37,5 @@ variable "TIME_ZONE" {
 variable "guacamole_cfg_default_mountpoint" {
   type        = string
   description = "here"
-  default     = "/home/ajcborges/Documents/terraform-docker-foundation/containers/dck-guacamole/config"
+  default     = "/media/docker/containers/dck-guacamole/config"
 }
