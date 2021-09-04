@@ -10,12 +10,12 @@ variable "container_hostname" {
 
 variable "container_domainname" {
   description = "Domain name of the container.."
-  default     = "cedeno.me"
+  default     = "cedeno.local"
 }
 
 variable "traefik_dns_label" {
   description = "label for traefik."
-  default     = "guacamole.cedeno.me"
+  default     = "guacamole.cedeno.local"
 }
 
 

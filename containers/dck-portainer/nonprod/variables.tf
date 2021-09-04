@@ -15,12 +15,12 @@ variable "container_hostname" {
 
 variable "container_domainname" {
   description = "Domain name of the container.."
-  default     = "cedeno.me"
+  default     = "cedeno.local"
 }
 
 variable "traefik_dns_label" {
   description = "label for traefik."
-  default     = "portainer.cedeno.me"
+  default     = "portainer.cedeno.local"
 }
 
 variable "TIME_ZONE" {
