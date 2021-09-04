@@ -1,6 +1,6 @@
 variable "container_port" {
   description = "Port for the Application"
-  default     = "8080"
+  default     = "80"
 }
 
 variable "container_hostname" {
