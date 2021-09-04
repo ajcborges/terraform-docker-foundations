@@ -1,50 +1,50 @@
 variable "webtop_cfg_default_mountpoint" {
-  type = string
-  description  = "here"
-  default = "/home/ajcborges/Documents/terraform-docker-foundation/containers/dck-webtop/config"
+  type        = string
+  description = "here"
+  default     = "/home/ajcborges/Documents/terraform-docker-foundation/containers/dck-webtop/config"
 }
 
 variable "container_puid" {
-  type = number
+  type        = number
   description = "PUID"
-  default = 1000
+  default     = 1000
 }
 
 variable "container_pgid" {
-  type = number
+  type        = number
   description = "PGID"
-  default = 1000
+  default     = 1000
 }
 
 variable "TIME_ZONE" {
-  type = string
+  type        = string
   description = "The timezone to be used (default: Australia/Melbourne)"
-  default = "Australia/Melbourne"
+  default     = "Australia/Melbourne"
 }
 
 variable "container_hostname" {
-   description		= "Hostname of the container."
-   default 		   = "webtop"
+  description = "Hostname of the container."
+  default     = "webtop"
 }
 
 variable "container_domainname" {
-   description		= "Domain name of the container.."
-   default 		   = "cedeno.me"
+  description = "Domain name of the container.."
+  default     = "cedeno.me"
 }
 
 variable "container_port" {
-   description		= "Port for the Application"
-   default 		= "3000"
+  description = "Port for the Application"
+  default     = "3000"
 }
 
 variable "network_alias" {
-   description		= "The network alias for all containers"
-   default		= "frontend-network"
+  description = "The network alias for all containers"
+  default     = "frontend-network"
 }
 
 variable "traefik_dns_label" {
-   description          = "label for traefik."
-   default              = "webtop.cedeno.me"
+  description = "label for traefik."
+  default     = "webtop.cedeno.me"
 }
 
 
