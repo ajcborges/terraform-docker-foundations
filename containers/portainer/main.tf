@@ -1,4 +1,4 @@
-module "container" {
+module "docker" {
   #source = "./modules"
   source = "git::https://github.com/ajcborges/terraform-modules.git//container?ref=d8722e8"
 

@@ -3,6 +3,12 @@ variable "image" {
   type        = string
   default     = null
 }
+
+variable "docker_host" {
+  description = "Docker Host Server"
+  type        = string
+  default     = "unix:///var/run/docker.sock"
+}
 variable "init" {
   description = "If init process should be used as the PID 1 in the container"
   type        = bool

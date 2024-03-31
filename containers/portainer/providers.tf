@@ -1,6 +1,5 @@
 provider "docker" {
-  host = "ssh://ajcborges@192.168.30.201:22"
-  //host = "unix:///var/run/docker.sock"
+  host = var.docker_host
 }
 
 terraform {

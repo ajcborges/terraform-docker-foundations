@@ -73,3 +73,7 @@ output "environment" {
 output "docker_networks" {
   value = module.container.docker_networks
 }
+
+output "docker_host" {
+  value = var.docker_host
+}
