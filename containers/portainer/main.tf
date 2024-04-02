@@ -1,10 +1,9 @@
-module "docker" {
-  #source = "./modules"
+module "container" {
   source = "git::https://github.com/ajcborges/terraform-modules.git//container?ref=d8722e8"
 
   image          = "portainer/portainer-ce"
   container_name = "portainer"
-  hostname       = "portainer-srv"
+  hostname       = "portainer"
   restart_policy = "always"
   ports = [{
     external = "9443"

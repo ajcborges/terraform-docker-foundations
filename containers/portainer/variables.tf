@@ -1,3 +1,8 @@
+variable "path" {
+  description = "env"
+  type        = string
+  default     = null
+}
 variable "image" {
   description = "Specify the image to start the container from. Can either be a repository/tag or a partial image ID"
   type        = string
