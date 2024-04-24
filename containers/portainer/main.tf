@@ -23,7 +23,13 @@ module "container" {
     "/Users/alfredocedeno/Documents/devops-2.0/git-repos/terraform-docker-foundations/containers/portainer/data/" = {
       container_path = "/opt/portainer/"
       read_only      = false
+    },
+    "/var/run/docker.sock" = {
+      container_path = "/var/run/docker.sock"
+      read_only      = true
+
     }
+
   }
 
 
